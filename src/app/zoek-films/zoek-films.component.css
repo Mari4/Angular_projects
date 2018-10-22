@@ -1,0 +1,59 @@
+body {
+  font-size: 12px;
+}
+div.movieContainer{
+  position: relative;
+  padding: 10px;
+}
+div.movie {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f0f0;
+}
+div.picture{
+  float: left;
+  width: auto;
+}
+div.movieOverview{
+  float: right;
+  width: 340px;
+}
+span.label {
+  width: 100px;
+  display: inline-block;
+}
+span.value {
+  display: inline-block;
+  font-weight: bold;
+}
+div.movie.odd {
+  background-color: #e0e0e0;
+}
+span.great { color: #3EB300; }
+span.good  { color: #669900; }
+span.ok    { color: #aaaa33; }
+span.bad   { color: #ff0000; }
+
+div.popup {
+  position: absolute;
+  margin: 70px 20px;
+  padding: 50px;
+  border: 3px solid green;
+  width: 755px;
+  background-color: #EEEEEE;
+  min-height: 300px;
+}
+div.popupoverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba( 50, 50, 50, 0.8);
+}
+
+a:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}

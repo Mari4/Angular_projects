@@ -1,0 +1,10 @@
+<h3>{{movie.title}}</h3>
+<ul>
+  <li>{{movie.original_title}}</li>
+  <li>{{movie.belongs_to_collection?.name}}</li>
+  <li>{{movie.release_date}}</li>
+  <li *ngIf="movie.genres">{{movie.genres | names}}</li>
+</ul>
+<p>{{movie.overview}}</p>
+<a *ngIf="movie.homepage" target="_blank" href="{{movie.homepage}}">Homepage</a>
+<button class=button (click)="closeMe()">Close</button>

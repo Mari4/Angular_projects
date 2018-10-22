@@ -1,0 +1,25 @@
+<p>
+  {{movie.title}}
+</p>
+<label>
+  Titel:
+  <input [value]="movie.title">
+  <input [(ngModel)]="movie.title">
+</label>
+
+<div class="menu">
+  <ul class="buttons">
+    <li>
+      <input id="showNumbers" type="checkbox" [(ngModel)]="this.showNumbers"/>
+      <label for="showNumbers">
+        {{showNumbers?'Show rating':'Show score'}}
+      </label>
+    </li>
+  </ul>
+</div>
+
+<div class="movie" *ngFor="let movie of movies">
+  <h2> {{i}}.{{movie.title}}</h2>
+  <span class="label score">Score</span>
+  <span class="value score" [ngClass]="scoreCategorie(movie.vote_average)">{{score(movie.vote_average)}}</span><br />
+</div>
